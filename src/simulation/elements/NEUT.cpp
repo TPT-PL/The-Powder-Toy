@@ -145,6 +145,10 @@ int Element_NEUT::update(UPDATE_FUNC_ARGS)
 					if (!(rand()%20))
 						sim->part_change_type(r>>8, x+rx, y+ry, PT_FWRK);
 					break;
+				case PT_CRDE:
+					if (!(rand()%20))
+						sim->part_change_type(r>>8, x+rx, y+ry, PT_OIL);
+					break;
 				case PT_FWRK:
 					if (!(rand()%20))
 						parts[r>>8].ctype = PT_DUST;
