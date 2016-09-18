@@ -147,7 +147,7 @@ int Element_NEUT::update(UPDATE_FUNC_ARGS)
 					break;
 				case PT_CRDE:
 					if (!(rand()%20))
-						sim->part_change_type(r>>8, x+rx, y+ry, PT_OIL);
+						sim->part_change_type(r>>8, x+rx, y+ry, PT_GEL);
 					break;
 				case PT_FWRK:
 					if (!(rand()%20))
